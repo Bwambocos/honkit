@@ -1,4 +1,6 @@
 {
+  "name": "honkit",
+  "packageManager": "yarn@4.0.0-rc.44",
   "scripts": {
     "build": "honkit build",
     "serve": "honkit serve"
