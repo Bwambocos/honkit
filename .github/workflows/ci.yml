@@ -31,3 +31,9 @@ jobs:
                   publish_branch: gh-pages
                   publish_dir: ./_book
 
+            - name: Deploy to S3
+              run: aws s3 sync --delete --region ap-northeast-1 ./_book s3://kosei-cyberlec-day4
+              with:
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
