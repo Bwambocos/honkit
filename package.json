@@ -2,5 +2,8 @@
   "scripts": {
     "build": "honkit build",
     "serve": "honkit serve"
+  },
+  "devDependencies": {
+    "honkit": "^5.1.1"
   }
 }
